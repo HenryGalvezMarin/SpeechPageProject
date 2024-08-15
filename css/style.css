@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+
+    @media (min-width: 768px) {
+        padding: 0 2rem;
+        max-width: 768px; 
+    }
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1a1a1a;
+
+    main{
+
+        &.show {
+            opacity: 0.5;
+        }
+        
+        h1 {
+            color: #fff;
+            text-align: center;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .categories-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2rem;
+
+            button {
+                background-color: #333;
+                color: #fff;
+                font-weight: 700;
+                border: none;
+                font-size: 18px;
+                border-radius: 15px;
+                padding: 0.8rem 1.2rem;
+                cursor: pointer;
+                transition: background-color 0.3s;
+
+                &:hover {
+                    background-color: #6b3a5f;
+                }
+            }
+        }
+
+        .speechs-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;  
+            justify-content: center;
+            align-items: center;       
+
+            .speech {
+                border-radius: 15px;
+                padding: 1rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                transition: background-color 0.3s;
+                cursor: pointer;
+                font-size: 18px;
+
+                &:nth-child(odd) {
+                    background-color: #333;
+                }
+
+                &:nth-child(even) {
+                    background-color: #4d4d4d;
+                }
+
+                &:hover {
+                    background-color: #6b3a5f;
+                }
+
+                p {
+                    color: #fff;
+                    font-size: 16px;
+                    margin-bottom: 1rem;
+                }
+            }
+        }        
+    }
+
+    .alert-copy-text {
+        background-color: #206139;
+        color: #fff;
+        font-size: 18px;
+        padding: 1rem;
+        border-radius: 15px;
+        margin-top: 2rem;
+        text-align: center;
+        position: fixed;
+        top: -50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: all 0.25s ease-in-out;
+
+        &.show {
+            height: auto;
+            opacity: 1;
+            top: 10%;
+        }
+    }
+}
