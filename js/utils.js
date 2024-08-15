@@ -1,8 +1,28 @@
 export function convertirSpeechHtml(speech) {
-    let speechHtml = speech.speech.replace(/\[\[INPUT\]\]/g, '<input placeholder="Nombre">');
-    speechHtml = speechHtml.replace(/\[\[FECHA\]\]/g, '<input placeholder="Fecha">');
+    
+    let copySpeech = speech;
+    let speechElement = document.createElement('div');
+    let speechElementText = document.createElement('div');
+    
+    if (typeof speech === 'string') {
+        copySpeech = [speech];
+    }
+
+    
+    copySpeech.forEach((speech) => {
+        speech = speech.replace(/\[\[INPUTNOMBRE\]\]/g, '<input placeholder="Nombre">');
+        speech = speech.replace(/\[\[FECHA\]\]/g, '<input placeholder="Fecha">');
+        speech = speech.replace(/\[\[BR\]\]/g, '');
+                
+        let p = document.createElement('p');
+        p.innerHTML = speech;
+        speechElementText.appendChild(p);
+    });
+
+    speechElement.appendChild(speechElementText);
+
     return `
-        <p>${speechHtml}</p>
+        ${speechElement.innerHTML}
         <button class="copy-button">📋</button>
     `;
 }
@@ -25,9 +45,13 @@ export function convertirHtmlToString(html) {
         }
     });
 
-    // Eliminación de etiquetas html innecesarias
-    const htmlString = clonedHtml.textContent;
-
+    // Eliminación de etiquetas html innecesarias conservando el texto con sus saltos de línea
+    const htmlString = clonedHtml.innerHTML
+        .replace(/<br>/g, '\n')
+        .replace(/<p>/g, '')
+        .replace(/<\/p>/g, '\n')
+        .replace(/<input.*>/g, '');
+    
     return htmlString;
 }
 

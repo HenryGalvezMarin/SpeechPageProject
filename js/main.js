@@ -7,7 +7,7 @@ function clickCopySpeech() {
     document.addEventListener('click', (event) => {
         if (event.target.classList.contains('copy-button')) {
             const speech = event.target.closest('.speech');
-            const speechText = speech.querySelector('p');
+            const speechText = speech.querySelector('div');
 
             navigator.clipboard.writeText(convertirHtmlToString(speechText));
 
@@ -31,7 +31,7 @@ function insertSpeechs(speechs, category) {
     filteredSpeechs.forEach(speech => {
         const speechElement = document.createElement('div');
         speechElement.classList.add('speech');
-        speechElement.innerHTML = convertirSpeechHtml(speech);
+        speechElement.innerHTML = convertirSpeechHtml(speech.speech);
         fragment.appendChild(speechElement);
         rellenarFechaInput(speechElement);
     });

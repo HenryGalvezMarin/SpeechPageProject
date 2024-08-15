@@ -1,13 +1,26 @@
 {
-    "categories": [ "Prestamos", "Inversiones", "Ahorro", "Migracion" ],
+    "categories": [ "Prestamos", "Inversiones", "Ahorro", "Migracion", "IOSPhone" ],
     "speechs": [
         {
-            "category": "Prestamos",
-            "speech": "Los prestamos [[INPUT]] son una forma de financiamiento que se otorga a personas o empresas que necesitan dinero para un fin determinado. Los prestamos pueden ser de diferentes tipos, como prestamos [[FECHA]] personales, prestamos hipotecarios, prestamos para empresas, entre otros."
+            "category": "IOSPhone",
+            "speech": [
+                "Entiendo [[INPUTNOMBRE]], quiero comentarte que por el momento solo tenemos app para Android desde la versión de sistema operativo Android 9 ☝️ ya que solo estamos disponibles de Google Play Store",
+                "[[BR]]",
+                "Pero nos encontramos trabajando en ello, muy pronto nos comunicaremos contigo cuando estemos disponibles para el sistema operativo IOS👩‍💻💪"
+            ]
         },
         {
-            "category": "Inversiones",
-            "speech": "Las inversiones son una forma de colocar el dinero en un activo con el objetivo de obtener una rentabilidad. Las inversiones pueden ser de diferentes tipos, como inversiones en acciones, inversiones en bonos, inversiones en bienes raices, entre otros."
+            "category": "Prestamos",
+            "speech":[
+                "🔎Verifico en el sistema que tu perfil se encuentra apto para solicitar un nuevo préstamo si así lo deseas😊",
+                "¿Te figura el botón de \"solicitar nuevo préstamo\" en tu app Kashin? Si no es así para ayudarte por favor envíame una *captura de pantalla* 🙌",
+                "Le figura algunas preguntas?🙌 si es así debe de contestarlas para poder continuar con su solicitud de préstamo 😊🤝 ",
+                "🔎Verifico en el sistema que aun no has completado todos los datos solicitados para la solicitud de tu préstamo ",
+                "Por favor completar el registro hasta que le salga 100% en la parte superior, luego le saldrá una pantalla de que sus datos serán validados 🙌",
+                "✅ Puedes completar el registro únicamente desde aquí --> https://play.google.com/store/apps/details?id=com.tc.kashin",
+                "[[BR]]",
+                "Si necesitas apoyo para completar tu registro o no te permite continuar, envíanos una captura de pantalla de lo que figura en el app Kashin, estaremos encantados de ayudarte🤗💙"
+            ]
         },
         {
             "category": "Ahorro",
