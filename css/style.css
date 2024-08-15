@@ -76,7 +76,14 @@ body {
             gap: 1rem;
             margin-top: 2rem;  
             justify-content: flex-start;
-            align-items: stretch;       
+            align-items: stretch;
+
+            @media (max-width: 768px) {
+                grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+                .speech {
+                    flex-direction: column;
+                }
+            }
 
             .speech {
                 border-radius: 15px;
