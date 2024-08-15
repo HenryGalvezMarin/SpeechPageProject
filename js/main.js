@@ -1,7 +1,6 @@
 import { convertirSpeechHtml, convertirHtmlToString, rellenarFechaInput } from './utils.js';
 
-function searchSpeechForTitle (speechs, title) {
-    // speechs es un array de objetos con la estructura { category: 'string', title: 'string' speech: ['string', 'string', ...] } quiero que me devuelva el objeto que al menos los caracteres de title esten en el titulo
+function searchSpeechForTitle (speechs, title) {    
     return speechs.find(speech => speech.title.toLowerCase().includes(title.toLowerCase()));
 
 }

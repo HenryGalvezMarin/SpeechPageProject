@@ -100,8 +100,8 @@ export function rellenarFechaInput(speech) {
         const valorLimpio = valor.replace(/\D/g, '');
 
         fechaInput.value = valorLimpio
-            .replace(/^(\d{2})(\d)/, '$1-$2')
-            .replace(/^(\d{2})-(\d{2})(\d)/, '$1-$2-$3');
+            .replace(/^(\d{2})(\d)/, '$1/$2')
+            .replace(/^(\d{2})\/(\d{2})(\d)/, '$1/$2/$3');
 
     });
 
