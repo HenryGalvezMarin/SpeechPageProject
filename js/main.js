@@ -1,4 +1,4 @@
-import { convertirSpeechHtml, convertirHtmlToString } from './utils.js';
+import { convertirSpeechHtml, convertirHtmlToString, rellenarFechaInput } from './utils.js';
 
 function clickCopySpeech() {
     const alertCopyText = document.querySelector('.alert-copy-text');
@@ -33,6 +33,7 @@ function insertSpeechs(speechs, category) {
         speechElement.classList.add('speech');
         speechElement.innerHTML = convertirSpeechHtml(speech);
         fragment.appendChild(speechElement);
+        rellenarFechaInput(speechElement);
     });
 
     speechsContainer.appendChild(fragment);
