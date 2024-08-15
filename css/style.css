@@ -20,7 +20,7 @@ body {
     background-color: #1a1a1a;
 
     main{
-
+        transition: all 0.3s;
         &.show {
             opacity: 0.5;
         }
@@ -68,11 +68,40 @@ body {
                 border-radius: 15px;
                 padding: 1rem;
                 display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                transition: background-color 0.3s;
-                cursor: pointer;
+                justify-content: center;
+                align-items: center;
                 font-size: 18px;
+                line-height: 1.8rem;
+
+                input {
+                    /*diseño amigable y oscuro*/
+                    background-color: #333;
+                    color: #fff;
+                    font-size: 18px;
+                    border: 2px solid #fff;
+                    border-radius: 15px;
+                    padding: 0.1rem;
+                    text-align: center;
+                    width: 150px;
+                    margin-right: 0.5rem;
+                    margin-left: 0.3rem;
+                }
+
+                button {
+                    background-color: transparent;
+                    font-weight: 700;
+                    border: 2px solid #fff;
+                    font-size: 18px;
+                    border-radius: 15px;
+                    padding: 0.8rem 1.2rem;
+                    cursor: pointer;
+                    transition: background-color 0.3s;                                  
+                    cursor: pointer;  
+
+                    &:hover {
+                        background-color: #6b3a5f;
+                    }               
+                }
 
                 &:nth-child(odd) {
                     background-color: #333;
@@ -80,10 +109,6 @@ body {
 
                 &:nth-child(even) {
                     background-color: #4d4d4d;
-                }
-
-                &:hover {
-                    background-color: #6b3a5f;
                 }
 
                 p {
@@ -108,7 +133,7 @@ body {
         left: 50%;
         transform: translate(-50%, -50%);
         opacity: 0;
-        transition: all 0.25s ease-in-out;
+        transition: all 0.20s ease-in-out;
 
         &.show {
             height: auto;

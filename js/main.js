@@ -1,70 +1,73 @@
+import { convertirSpeechHtml, convertirHtmlToString } from './utils.js';
+
 function clickCopySpeech() {
-    const speechs = document.querySelectorAll('.speech');
     const alertCopyText = document.querySelector('.alert-copy-text');
-    speechs.forEach(speech => {
-        speech.addEventListener('click', () => {
-            const speechText = speech.querySelector('p').textContent;
-            navigator.clipboard.writeText(speechText);
+    const main = document.querySelector('main');
+
+    document.addEventListener('click', (event) => {
+        if (event.target.classList.contains('copy-button')) {
+            const speech = event.target.closest('.speech');
+            const speechText = speech.querySelector('p');
+
+            navigator.clipboard.writeText(convertirHtmlToString(speechText));
+
             alertCopyText.classList.add('show');
-            const main = document.querySelector('main');
             main.classList.add('show');
             setTimeout(() => {
                 alertCopyText.classList.remove('show');
                 main.classList.remove('show');
-            }, 1000);         
-        });
-    }
-    );
+            }, 1000);
+        }
+    });
 }
 
-function insertSpeechs(speechs) {
+function insertSpeechs(speechs, category) {
     const speechsContainer = document.querySelector('.speechs-container');
-    const categoriesButtons = document.querySelectorAll('.category-button');
+    speechsContainer.innerHTML = ''; // Limpiar contenido previo
 
-    categoriesButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            speechsContainer.innerHTML = '';
-            const category = button.textContent;
-            const filteredSpeechs = speechs.filter(speech => speech.category === category);
-            filteredSpeechs.forEach(speech => {
-                const speechElement = document.createElement('div');
-                speechElement.classList.add('speech');
-                speechElement.innerHTML = `                    
-                    <p>${speech.speech}</p>                    
-                `;
-                speechsContainer.appendChild(speechElement);
-            });
-            clickCopySpeech();
-        });
+    const fragment = document.createDocumentFragment(); // Usar fragmento para inserciones eficientes
+    const filteredSpeechs = speechs.filter(speech => speech.category === category);
+
+    filteredSpeechs.forEach(speech => {
+        const speechElement = document.createElement('div');
+        speechElement.classList.add('speech');
+        speechElement.innerHTML = convertirSpeechHtml(speech);
+        fragment.appendChild(speechElement);
     });
 
+    speechsContainer.appendChild(fragment);
 }
 
 function insertData(data) {
     const categoriesContainer = document.querySelector('.categories-container');
-    const categories = data.categories;
-    const speechs = data.speechs;
+    const fragment = document.createDocumentFragment();
 
-    categories.forEach(category => {
+    // Crear botones de categoría
+    data.categories.forEach(category => {
         const categoryButton = document.createElement('button');
         categoryButton.classList.add('category-button');
         categoryButton.textContent = category;
-        categoriesContainer.appendChild(categoryButton);
+        fragment.appendChild(categoryButton);
     });
 
-    insertSpeechs(speechs);
+    categoriesContainer.appendChild(fragment);
 
-    const firstCategoryButton = document.querySelector('.category-button');
-    firstCategoryButton.click();    
+    // Asignar evento a botones de categoría
+    categoriesContainer.addEventListener('click', (event) => {
+        if (event.target.classList.contains('category-button')) {
+            insertSpeechs(data.speechs, event.target.textContent);
+        }
+    });
+
+    // Simular clic en el primer botón para cargar la primera categoría
+    categoriesContainer.querySelector('.category-button').click();
 }
-
 
 async function loadJSON() {
     const response = await fetch('./data/data.json');
     const data = await response.json();
     insertData(data);
+    clickCopySpeech(); // Activar funcionalidad de copiar texto
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    loadJSON();
-});
+document.addEventListener('DOMContentLoaded', loadJSON);
