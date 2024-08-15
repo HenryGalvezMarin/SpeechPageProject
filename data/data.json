@@ -3,6 +3,7 @@
     "speechs": [
         {
             "category": "IOSPhone",
+            "title": "App para IOS",
             "speech": [
                 "Entiendo [[INPUTNOMBRE]], quiero comentarte que por el momento solo tenemos app para Android desde la versión de sistema operativo Android 9 ☝️ ya que solo estamos disponibles de Google Play Store",
                 "[[BR]]",
@@ -11,6 +12,7 @@
         },
         {
             "category": "Prestamos",
+            "title": "Solicitud de préstamo",
             "speech":[
                 "🔎Verifico en el sistema que tu perfil se encuentra apto para solicitar un nuevo préstamo si así lo deseas😊",
                 "¿Te figura el botón de \"solicitar nuevo préstamo\" en tu app Kashin? Si no es así para ayudarte por favor envíame una *captura de pantalla* 🙌",
@@ -24,54 +26,67 @@
         },
         {
             "category": "Ahorro",
+            "title": "Ahorro",
             "speech": "El ahorro es una forma de guardar una parte del dinero que se recibe con el objetivo de tener un respaldo en caso de emergencia o para cumplir un objetivo a futuro. El ahorro puede ser de diferentes tipos, como ahorro en una cuenta de ahorro, ahorro en un fondo de inversion, entre otros."
         },
         {
             "category": "Migracion",
+            "title": "Migracion",
             "speech": "La migracion es el desplazamiento de personas de un lugar a otro con el objetivo de mejorar su calidad de vida. La migracion puede ser de diferentes tipos, como migracion interna, migracion internacional, migracion por motivos laborales, entre otros."
         },
         {
             "category": "Prestamos",
+            "title": "Prestamos",
             "speech": "Los prestamos [[INPUT]] son una forma de financiamiento que se otorga a personas o empresas que necesitan dinero para un fin determinado. Los prestamos pueden ser de diferentes tipos, como prestamos [[FECHA]] personales, prestamos hipotecarios, prestamos para empresas, entre otros."
         },
         {
             "category": "Prestamos",
+            "title": "Prestamos",
             "speech": "Los prestamos son una forma de financiamiento que se otorga a personas o empresas que necesitan dinero para un fin determinado. Los prestamos pueden ser de diferentes tipos, como prestamos personales, prestamos hipotecarios, prestamos para empresas, entre otros."
         },
         {
             "category": "Inversiones",
+            "title": "Inversiones",
             "speech": "Las inversiones son una forma de colocar el dinero en un activo con el objetivo de obtener una rentabilidad. Las inversiones pueden ser de diferentes tipos, como inversiones en acciones, inversiones en bonos, inversiones en bienes raices, entre otros."
         },
         {
             "category": "Ahorro",
+            "title": "Ahorro",
             "speech": "El ahorro es una forma de guardar una parte del dinero que se recibe con el objetivo de tener un respaldo en caso de emergencia o para cumplir un objetivo a futuro. El ahorro puede ser de diferentes tipos, como ahorro en una cuenta de ahorro, ahorro en un fondo de inversion, entre otros."
         },
         {
             "category": "Migracion",
+            "title": "Migracion",
             "speech": "La migracion es el desplazamiento de personas de un lugar a otro con el objetivo de mejorar su calidad de vida. La migracion puede ser de diferentes tipos, como migracion interna, migracion internacional, migracion por motivos laborales, entre otros."
         },
         {
             "category": "Prestamos",
+            "title": "Prestamos",
             "speech": "Los prestamos [[INPUT]] son una forma de financiamiento que se otorga a personas o empresas que necesitan dinero para un fin determinado. Los prestamos pueden ser de diferentes tipos, como prestamos [[FECHA]] personales, prestamos hipotecarios, prestamos para empresas, entre otros."
         },
         {
             "category": "Prestamos",
+            "title": "Prestamos",
             "speech": "Los prestamos [[INPUT]] son una forma de financiamiento que se otorga a personas [[INPUT]] o empresas que necesitan dinero para un fin determinado. Los prestamos pueden ser de diferentes tipos, como prestamos [[FECHA]] personales, prestamos hipotecarios, prestamos para empresas, entre otros."
         },
         {
             "category": "Inversiones",
+            "title": "Inversiones",
             "speech": "Las inversiones son una forma de colocar el dinero en un activo con el objetivo de obtener una rentabilidad. Las inversiones pueden ser de diferentes tipos, como inversiones en acciones, inversiones en bonos, inversiones en bienes raices, entre otros."
         },
         {
             "category": "Ahorro",
+            "title": "Ahorro",
             "speech": "El ahorro es una forma de guardar una parte del dinero que se recibe con el objetivo de tener un respaldo en caso de emergencia o para cumplir un objetivo a futuro. El ahorro puede ser de diferentes tipos, como ahorro en una cuenta de ahorro, ahorro en un fondo de inversion, entre otros."
         },
         {
             "category": "Migracion",
+            "title": "Migracion",
             "speech": "La migracion es el desplazamiento de personas de un lugar a otro con el objetivo de mejorar su calidad de vida. La migracion puede ser de diferentes tipos, como migracion interna, migracion internacional, migracion por motivos laborales, entre otros."
         },
         {
             "category": "Prestamos",
+            "title": "Prestamos",
             "speech": "Los prestamos [[INPUT]] son una forma de financiamiento que se otorga a personas [[INPUT]] o empresas que necesitan dinero para un fin determinado. Los prestamos pueden ser de diferentes tipos, como prestamos [[FECHA]] personales, prestamos hipotecarios, prestamos para empresas, entre otros."
         }
     ]

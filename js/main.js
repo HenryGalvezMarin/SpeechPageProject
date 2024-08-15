@@ -1,5 +1,25 @@
 import { convertirSpeechHtml, convertirHtmlToString, rellenarFechaInput } from './utils.js';
 
+function searchSpeechForTitle (speechs, title) {
+    // speechs es un array de objetos con la estructura { category: 'string', title: 'string' speech: ['string', 'string', ...] } quiero que me devuelva el objeto que al menos los caracteres de title esten en el titulo
+    return speechs.find(speech => speech.title.toLowerCase().includes(title.toLowerCase()));
+
+}
+
+function addEvenlistenerSearchSpeech (speechs) {
+    const searchInput = document.querySelector('.search-input');
+
+    searchInput.addEventListener('input', () => {
+        console.log('input', searchInput.value);
+        if (searchInput.value.length >= 3) {
+            const speech = searchSpeechForTitle(speechs, searchInput.value);
+            if (speech) {
+                insertSpeechs([speech], speech.category);
+            }
+        }
+    });
+}
+
 function clickCopySpeech() {
     const alertCopyText = document.querySelector('.alert-copy-text');
     const main = document.querySelector('main');
@@ -68,6 +88,7 @@ async function loadJSON() {
     const response = await fetch('./data/data.json');
     const data = await response.json();
     insertData(data);
+    addEvenlistenerSearchSpeech(data.speechs);
     clickCopySpeech(); // Activar funcionalidad de copiar texto
 }
 
