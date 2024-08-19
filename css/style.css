@@ -14,17 +14,27 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: #1a1a1a;
 
-    main{
+    main {
         transition: all 0.3s;
+
         &.show {
             opacity: 0.5;
         }
-        
+
         h1 {
             color: #fff;
             text-align: center;
             margin-top: 2rem;
             margin-bottom: 2rem;
+            text-wrap: nowrap;
+        }
+
+        .header-container {
+            @media (min-width: 768px) {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
         }
 
         .input-search-container {
@@ -33,6 +43,7 @@ body {
             align-items: center;
             gap: 1rem;
             margin-top: 2rem;
+            margin-bottom: 2rem;
 
             input {
                 background-color: #333;
@@ -44,6 +55,27 @@ body {
                 text-align: center;
                 width: 300px;
             }
+
+            button {
+                background-color: #333;
+                color: #fff;
+                font-weight: 700;
+                border: none;
+                font-size: 18px;
+                border-radius: 15px;
+                padding: 0.8rem 1.2rem;
+                cursor: pointer;
+                transition: background-color 0.3s;
+
+                &:hover {
+                    background-color: #913215;
+                }
+
+                /* Invisible en desktop*/
+                @media (min-width: 768px) {
+                    display: none;
+                }
+            }
         }
 
         .categories-container {
@@ -51,7 +83,6 @@ body {
             flex-wrap: wrap;
             justify-content: center;
             gap: 1rem;
-            margin-top: 2rem;
 
             button {
                 background-color: #333;
@@ -68,20 +99,44 @@ body {
                     background-color: #913215;
                 }
             }
+
+            @media (max-width: 768px) {
+                display: none;
+
+                &.show {
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100vh;
+                    display: grid;
+                    background-color: rgba(0, 0, 0, 0.9);
+                    padding: 1.5rem;
+                    margin-top: 0;
+                    overflow: auto;
+                }
+            }
+
+
         }
 
         .speechs-container {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
             gap: 1rem;
-            margin-top: 2rem;  
+            margin-top: 2rem;
             justify-content: flex-start;
             align-items: stretch;
 
             @media (max-width: 768px) {
                 grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+
                 .speech {
                     flex-direction: column;
+
+                    div {
+                        align-self: flex-start;
+                    }
                 }
             }
 
@@ -89,7 +144,7 @@ body {
                 border-radius: 15px;
                 padding: 1rem;
                 display: flex;
-                justify-content: center;
+                justify-content: space-between;
                 align-items: center;
                 font-size: 18px;
                 line-height: 1.8rem;
@@ -116,13 +171,13 @@ body {
                     border-radius: 15px;
                     padding: 0.8rem 1.2rem;
                     cursor: pointer;
-                    transition: all 0.3s ease-in-out;                                  
-                    cursor: pointer;  
+                    transition: all 0.3s ease-in-out;
+                    cursor: pointer;
 
                     &:hover {
                         background-color: #cfa61e;
                         transform: scale(1.1);
-                    }               
+                    }
                 }
 
                 &:nth-child(odd) {
@@ -140,7 +195,7 @@ body {
                     margin-right: 1rem;
                 }
             }
-        }        
+        }
     }
 
     .alert-copy-text {
@@ -184,6 +239,31 @@ body {
             height: auto;
             opacity: 1;
             top: 10%;
+        }
+    }
+
+    .close-menu-bar {
+        display: none;
+        @media (max-width: 768px) {
+            position: fixed;
+            top: 1rem;
+            right: 1rem;
+            background-color: #333;
+            color: #fff;
+            font-weight: 700;
+            border: none;
+            font-size: 18px;
+            border-radius: 50%;
+            padding: 0.6rem 0.6rem;
+            z-index: 2000;            
+
+            &:hover {
+                background-color: #913215;
+            }
+
+            &.show {
+                display: block;
+            }
         }
     }
 }

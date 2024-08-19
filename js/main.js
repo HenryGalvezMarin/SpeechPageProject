@@ -1,19 +1,49 @@
 import { convertirSpeechHtml, convertirHtmlToString, rellenarFechaInput } from './utils.js';
 
-function searchSpeechForTitle (speechs, title) {    
-    return speechs.find(speech => speech.title.toLowerCase().includes(title.toLowerCase()));
+function menuMobile() {
+    const menuButton = document.querySelector('.menu-bar');
+    const menu = document.querySelector('.categories-container');
+    const closeMenu = document.querySelector('.close-menu-bar');
 
+    menuButton.addEventListener('click', () => {
+        menu.classList.toggle('show');
+        closeMenu.classList.toggle('show');
+    });
+
+    closeMenu.addEventListener('click', () => {
+        menu.classList.remove('show');
+        closeMenu.classList.remove('show');
+    });
+}
+
+function searchSpeechForText (speechs, text) {        
+    let speechFinded = [];
+    speechs.forEach(speech => {
+        let speechCopy = speech.speech;
+        if (typeof speechCopy === 'string') {
+            speechCopy = [speechCopy];
+        }
+        let speechTitle = speech.title;
+        speechTitle = speechTitle.toLowerCase();
+        speechCopy.forEach((speechText) => {            
+            speechText = speechText.toLowerCase();
+            text = text.toLowerCase();
+            if (speechText.includes(text) || speechTitle.includes(text)) {
+                speechFinded.push(speech);
+            }
+        });
+    });    
+    return speechFinded;
 }
 
 function addEvenlistenerSearchSpeech (speechs) {
     const searchInput = document.querySelector('.search-input');
 
     searchInput.addEventListener('input', () => {
-        console.log('input', searchInput.value);
         if (searchInput.value.length >= 3) {
-            const speech = searchSpeechForTitle(speechs, searchInput.value);
-            if (speech) {
-                insertSpeechs([speech], speech.category);
+            const speechsSearch = searchSpeechForText(speechs, searchInput.value);
+            if (speechsSearch) {
+                insertSpeechs(speechsSearch, 'Busqueda');
             }
         }
     });
@@ -45,8 +75,12 @@ function insertSpeechs(speechs, category) {
     speechsContainer.innerHTML = ''; // Limpiar contenido previo
 
     const fragment = document.createDocumentFragment(); // Usar fragmento para inserciones eficientes
-    const filteredSpeechs = speechs.filter(speech => speech.category === category);
-
+    let filteredSpeechs = [];
+    if (category === 'Busqueda') {
+        filteredSpeechs = speechs;
+    } else {
+        filteredSpeechs = speechs.filter(speech => speech.category === category);
+    }
     filteredSpeechs.forEach(speech => {
         const speechElement = document.createElement('div');
         speechElement.classList.add('speech');
@@ -61,6 +95,8 @@ function insertSpeechs(speechs, category) {
 function insertData(data) {
     const categoriesContainer = document.querySelector('.categories-container');
     const fragment = document.createDocumentFragment();
+    const menu = document.querySelector('.categories-container');
+    const closeMenu = document.querySelector('.close-menu-bar');
 
     // Crear botones de categoría
     data.categories.forEach(category => {
@@ -76,6 +112,8 @@ function insertData(data) {
     categoriesContainer.addEventListener('click', (event) => {
         if (event.target.classList.contains('category-button')) {
             insertSpeechs(data.speechs, event.target.textContent);
+            menu.classList.toggle('show');            
+            closeMenu.classList.remove('show');
         }
     });
 
@@ -89,6 +127,7 @@ async function loadJSON() {
     insertData(data);
     addEvenlistenerSearchSpeech(data.speechs);
     clickCopySpeech(); // Activar funcionalidad de copiar texto
+    menuMobile(); // Activar menú móvil
 }
 
 document.addEventListener('DOMContentLoaded', loadJSON);

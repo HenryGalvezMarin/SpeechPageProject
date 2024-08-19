@@ -11,6 +11,7 @@ export function convertirSpeechHtml(speech) {
     
     copySpeech.forEach((speech) => {
         speech = speech.replace(/\[\[INPUTNOMBRE\]\]/g, '<input placeholder="Nombre">');
+        speech = speech.replace(/\[\[INPUTPRECIO\]\]/g, '<input placeholder="Precio">');
         speech = speech.replace(/\[\[FECHA\]\]/g, '<input placeholder="Fecha">');
         speech = speech.replace(/\[\[BR\]\]/g, '');
                 
@@ -39,8 +40,8 @@ export function convertirHtmlToString(html) {
     // Reemplazo de valores usando un solo recorrido del DOM
     clonedHtml.querySelectorAll('input').forEach(input => {
         const placeholder = input.getAttribute('placeholder');
-        if (placeholder === 'Nombre' || placeholder === 'Fecha') {
-            const valor = input.value.trim() || (placeholder === 'Nombre' ? 'NOMBRE' : 'FECHA');
+        if (placeholder === 'Nombre' || placeholder === 'Precio' || placeholder === 'Fecha') {
+            const valor = input.value.trim() || (placeholder === 'Nombre' ? 'NOMBRE' : (placeholder === 'Precio' ? 'PRECIO' : 'FECHA'));
             input.replaceWith(document.createTextNode(valor));
         }
     });

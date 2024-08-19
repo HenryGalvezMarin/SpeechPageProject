@@ -1,17 +1,33 @@
 {
-    "categories": [ "Prestamos", "Inversiones", "Ahorro", "Migracion", "IOSPhone" ],
-    "speechs": [
+    "categories": [ 
+        "Apertura/Cierres", 
+        "Solicitud de préstamo", 
+        "Linea crediticia", 
+        "Bancos de depósito", 
+        "Corregir información", 
+        "Requisitos", 
+        "App Kashin/Llamadas", 
+        "IOSPhone", 
+        "Migración", 
+        "Recupero" ,
+        "Pago",
+        "Préstamo",
+        "Promesa de pago",
+        "Historial de pagos",
+        "Cliente 800",
+        "Desembolso",
+        "Errores APP",
+        "Retorno de capital",
+        "Desembolso BCP",
+        "Comprobante de pago",
+        "Promesa de pago",
+        "Amenazas",
+        "Tasas",
+        "Retorno de capital"        
+    ],
+    "speechs": [        
         {
-            "category": "IOSPhone",
-            "title": "App para IOS",
-            "speech": [
-                "Entiendo [[INPUTNOMBRE]], quiero comentarte que por el momento solo tenemos app para Android desde la versión de sistema operativo Android 9 ☝️ ya que solo estamos disponibles de Google Play Store",
-                "[[BR]]",
-                "Pero nos encontramos trabajando en ello, muy pronto nos comunicaremos contigo cuando estemos disponibles para el sistema operativo IOS👩‍💻💪"
-            ]
-        },
-        {
-            "category": "Prestamos",
+            "category": "Solicitud de préstamo",
             "title": "Solicitud de préstamo",
             "speech":[
                 "🔎Verifico en el sistema que tu perfil se encuentra apto para solicitar un nuevo préstamo si así lo deseas😊",
@@ -25,69 +41,611 @@
             ]
         },
         {
-            "category": "Ahorro",
-            "title": "Ahorro",
-            "speech": "El ahorro es una forma de guardar una parte del dinero que se recibe con el objetivo de tener un respaldo en caso de emergencia o para cumplir un objetivo a futuro. El ahorro puede ser de diferentes tipos, como ahorro en una cuenta de ahorro, ahorro en un fondo de inversion, entre otros."
+            "category": "Solicitud de préstamo",
+            "title": "Solicitud de préstamo",
+            "speech": "Para poder solicitar un préstamo con nosotros debe de completar su registro en el aplicativo de Kashin, ingresar sus datos personales, su información bancaria, realizar la solicitud y subir su foto selfie y de DNI para que sea validado su perfil y proceda al desembolso ☝️"
         },
         {
-            "category": "Migracion",
-            "title": "Migracion",
-            "speech": "La migracion es el desplazamiento de personas de un lugar a otro con el objetivo de mejorar su calidad de vida. La migracion puede ser de diferentes tipos, como migracion interna, migracion internacional, migracion por motivos laborales, entre otros."
+            "category": "Solicitud de préstamo",
+            "title": "Solicitud de préstamo",
+            "speech": [
+                "Para poder solicitar un préstamo con nosotros debes de completar tu registro en el aplicativo de Kashin🤗",
+                "Lo cual implica:",
+                "1️⃣Realizar la solicitud",
+                "2️⃣Ingresar tus datos personales/laborales",
+                "3️⃣Ingresar tu información bancaria(Cuenta propia BCP o Interbank)",
+                "4️⃣Subir tu foto selfie y de DNI ",
+                "Al culminar todo el proceso debes de esperar que sea validado tu perfil y proceda al desembolso 🥳☝️",
+                "[[BR]]",
+                "¿Te gustaría que te ayude con el proceso de registro o necesitas más información al respecto?"
+            ]
         },
         {
-            "category": "Prestamos",
-            "title": "Prestamos",
-            "speech": "Los prestamos [[INPUT]] son una forma de financiamiento que se otorga a personas o empresas que necesitan dinero para un fin determinado. Los prestamos pueden ser de diferentes tipos, como prestamos [[FECHA]] personales, prestamos hipotecarios, prestamos para empresas, entre otros."
+            "category": "Solicitud de préstamo",
+            "title": "Solicitud de préstamo",
+            "speech": "Entendemos, muchas gracias por considerarnos, que tenga un buen día! 😊🙌 Si tuvieras alguna consulta, no dudes en contactarnos ¡Estamos para ayudarte! 💙"
         },
         {
-            "category": "Prestamos",
-            "title": "Prestamos",
-            "speech": "Los prestamos son una forma de financiamiento que se otorga a personas o empresas que necesitan dinero para un fin determinado. Los prestamos pueden ser de diferentes tipos, como prestamos personales, prestamos hipotecarios, prestamos para empresas, entre otros."
+            "category": "Linea crediticia",
+            "title": "Linea crediticia",
+            "speech": "Al ser un app de *micro créditos* por el momento todos nuestros clientes inician con préstamos de S/50, mientras va pagando a tiempo sus préstamos, subirá puntaje y con ello de nivel que sería a préstamos de S/100 luego de S/150, S/200, S/250, S/300 y así progresivamente hasta llegar al tope actual que tenemos de hasta S/800💪💙"
         },
         {
-            "category": "Inversiones",
-            "title": "Inversiones",
-            "speech": "Las inversiones son una forma de colocar el dinero en un activo con el objetivo de obtener una rentabilidad. Las inversiones pueden ser de diferentes tipos, como inversiones en acciones, inversiones en bonos, inversiones en bienes raices, entre otros."
+            "category": "Linea crediticia",
+            "title": "Linea crediticia",
+            "speech": "*Cada vez que subes de linea crediticia, el interés en tus préstamos irá reduciendo* 🙌"
         },
         {
-            "category": "Ahorro",
-            "title": "Ahorro",
-            "speech": "El ahorro es una forma de guardar una parte del dinero que se recibe con el objetivo de tener un respaldo en caso de emergencia o para cumplir un objetivo a futuro. El ahorro puede ser de diferentes tipos, como ahorro en una cuenta de ahorro, ahorro en un fondo de inversion, entre otros."
+            "category": "Bancos de depósito",
+            "title": "Bancos de depósito",
+            "speech": [
+                "Por el momento solo trabajamos con 2 bancos para los desembolsos y pagos, que son a cuentas de ahorros o corriente BCP e Interbank 🤗",
+                "puedes adquirir una cuenta de ahorros en cualquiera de estos bancos👆 es gratuito, en cuanto lo tengas, estaremos gustosos de trabajar contigo 💙"
+            ]
         },
         {
-            "category": "Migracion",
-            "title": "Migracion",
-            "speech": "La migracion es el desplazamiento de personas de un lugar a otro con el objetivo de mejorar su calidad de vida. La migracion puede ser de diferentes tipos, como migracion interna, migracion internacional, migracion por motivos laborales, entre otros."
+            "category": "Bancos de depósito",
+            "title": "Bancos de depósito",
+            "speech": [
+                "Por el momento solo contamos BCP e Interbank.Puedes abrir tu cuenta en los siguientes enlaces 🤓👇👇",
+                "[[BR]]",
+                "https://bit.ly/CuentaSimpleIBK",
+                "[[BR]]",
+                "https://www.abretucuenta.viabcp.com/",
+                "[[BR]]",
+                "Te comentamos que ambos bancos permiten abrir cuentas digitales por medio de sus páginas web sin necesidad de ir al banco físicamente 😊"
+            ]
         },
         {
-            "category": "Prestamos",
-            "title": "Prestamos",
-            "speech": "Los prestamos [[INPUT]] son una forma de financiamiento que se otorga a personas o empresas que necesitan dinero para un fin determinado. Los prestamos pueden ser de diferentes tipos, como prestamos [[FECHA]] personales, prestamos hipotecarios, prestamos para empresas, entre otros."
+            "category": "Corregir información",
+            "title": "Corregir información",
+            "speech": "Verifico que el sistema le está solicitando que corrija sus fotos [[INPUTNOMBRE]]☝️ En su foto selfie figura incompleto su rostro y en el de DNI una pantalla negra"
+
         },
         {
-            "category": "Prestamos",
-            "title": "Prestamos",
-            "speech": "Los prestamos [[INPUT]] son una forma de financiamiento que se otorga a personas [[INPUT]] o empresas que necesitan dinero para un fin determinado. Los prestamos pueden ser de diferentes tipos, como prestamos [[FECHA]] personales, prestamos hipotecarios, prestamos para empresas, entre otros."
+            "category": "Corregir información",
+            "title": "Corregir información",
+            "speech": [
+                "Tener en cuenta que para poder validar tu identidad es necesario que subas la imagen de tu DNI y foto SELFIE, esta debe de ser tomada en un lugar con iluminación y debe de figurar su rostro y documento nítido y dentro de las líneas puntiagudas.",
+                "*Por favor ingresa al app Kashin y de clic en \"corregir\",* una vez lo hayas realizado, espera la validación y corrige la siguiente foto, esto tarda 5 minutos y luego procederá el desembolso de tu préstamo 💙"
+            ]
         },
         {
-            "category": "Inversiones",
-            "title": "Inversiones",
-            "speech": "Las inversiones son una forma de colocar el dinero en un activo con el objetivo de obtener una rentabilidad. Las inversiones pueden ser de diferentes tipos, como inversiones en acciones, inversiones en bonos, inversiones en bienes raices, entre otros."
+            "category": "Requisitos",
+            "title": "Requisitos",
+            "speech": "Debe de ser residente en Perú, ingresar sus datos correctamente en el app, que sus fotos de identidad coincidan, pasar los filtros de riesgo(que haya información crediticia, puede tener deudas pero no estar en perdida), tener un numero de cuenta propio BCP o Interbank😊🙌"
         },
         {
-            "category": "Ahorro",
-            "title": "Ahorro",
-            "speech": "El ahorro es una forma de guardar una parte del dinero que se recibe con el objetivo de tener un respaldo en caso de emergencia o para cumplir un objetivo a futuro. El ahorro puede ser de diferentes tipos, como ahorro en una cuenta de ahorro, ahorro en un fondo de inversion, entre otros."
+            "category": "App Kashin/Llamadas",
+            "title": "App Kashin/Llamadas",
+            "speech": "Somos un aplicativo de préstamos, completamente seria y confiable, cumplimos con todas las regulaciones de la SBS, ofrecemos un servicio transparente a nuestros clientes, y NO realizamos amenazas ni usamos prácticas intimidatorias a nuestros clientes ni sus contactos, ya que no es parte de nuestras políticas.😊🤝"
         },
         {
-            "category": "Migracion",
-            "title": "Migracion",
-            "speech": "La migracion es el desplazamiento de personas de un lugar a otro con el objetivo de mejorar su calidad de vida. La migracion puede ser de diferentes tipos, como migracion interna, migracion internacional, migracion por motivos laborales, entre otros."
+            "category": "IOSPhone",
+            "title": "App para IOS",
+            "speech": [
+                "Entiendo [[INPUTNOMBRE]], quiero comentarte que por el momento solo tenemos app para Android desde la versión de sistema operativo Android 9 ☝️ ya que solo estamos disponibles de Google Play Store",
+                "[[BR]]",
+                "Pero nos encontramos trabajando en ello, muy pronto nos comunicaremos contigo cuando estemos disponibles para el sistema operativo IOS👩‍💻💪"
+            ]
         },
         {
-            "category": "Prestamos",
-            "title": "Prestamos",
-            "speech": "Los prestamos [[INPUT]] son una forma de financiamiento que se otorga a personas [[INPUT]] o empresas que necesitan dinero para un fin determinado. Los prestamos pueden ser de diferentes tipos, como prestamos [[FECHA]] personales, prestamos hipotecarios, prestamos para empresas, entre otros."
-        }
+            "category": "Apertura/Cierres",
+            "title": "Apertura/Cierres",
+            "speech": [
+                "Hola, buen día! 🙋‍♀️",
+                "Somos Kashin, el app de préstamos,",
+                "mi nombre es Lesly😊",
+                "¿En qué podemos ayudarte hoy?🙌"
+            ]
+        },
+        {
+            "category": "Apertura/Cierres",
+            "title": "Apertura/Cierres",
+            "speech": "Entiendo [[INPUTNOMBRE]], para que pueda recibir una atención especializada"
+        },
+        {
+            "category": "Apertura/Cierres",
+            "title": "Apertura/Cierres",
+            "speech": "Recuerda que para que tu pago sea validado, tienes que subir el comprobante de pago en el app de Kashin. ¿Realizaste dicha operación?🔎🤗"
+        },
+        {
+            "category": "Apertura/Cierres",
+            "title": "Apertura/Cierres",
+            "speech": "Gracias a ti! 💙 Fue un gusto poder atenderte, gracias por comunicarte con nosotros que tengas un lindo día! 🤗"
+        },        
+        {
+            "category": "Apertura/Cierres",
+            "title": "Apertura/Cierres",
+            "speech": [
+                "Estuvimos a la espera de tu respuesta, fue un gusto poder atenderte ☺️ ",
+                "Gracias por comunicarte con nosotros, si aun tienes dudas, estaremos encantados de ayudarte 💙"                
+            ]
+        },        
+        {
+            "category": "Apertura/Cierres",
+            "title": "Apertura/Cierres",
+            "speech": "Gracias a ti, ¡Que tengas un buen día! Si tienes alguna otra pregunta en el futuro, no dudes en contactarnos. ¡Estamos aquí para ayudarte!😊💙"
+        },        
+        {
+            "category": "Apertura/Cierres",
+            "title": "Apertura/Cierres",
+            "speech": [
+                "Estuvimos a la espera de tu respuesta, ¡Que tengas un buen día! Si tienes alguna otra pregunta en el futuro, no dudes en contactarnos. ¡Estamos aquí para ayudarte!😊💙",
+                "[[BR]]",
+                "💙 Fue un gusto poder atenderte espero haberte ayudado 🫂, gracias por comunicarte con nosotros 🤗"
+            ]
+        },        
+        {
+            "category": "Apertura/Cierres",
+            "title": "Apertura/Cierres",
+            "speech": [
+                "😔 Estuvimos a la espera de tu respuesta, pero al parecer no estás disponible en el chat en estos momentos.",
+                "[[BR]]",
+                "☝️Recuerda:",
+                "Si tienes algún inconveniente para completar tu registro en el app Kashin, quedamos atentos a que nos lo indiques para poder ayudarte. 🤗 Puedes escribir *Hola* y todo comenzará nuevamente.",
+                "[[BR]]",
+                "Saludos. 💙"
+            ]
+        },
+        {
+            "category": "Apertura/Cierres",
+            "title": "Apertura/Cierres",
+            "speech": [
+                "Por favor recuerde que la siguiente encuesta es para calificar mi atención. 👩🏻‍💻",
+                "[[BR]]",
+                "Recuerda que 5 ⭐ es Totalmente satisfecho.",
+                "[[BR]]",
+                "Saludos.💙"
+            ]
+        },
+        {
+            "category": "Migración",
+            "title": "Migración",
+            "speech": [
+                "Para poder migrar tu información anterior es necesario realizar el pago de tu préstamo actual:",
+                "Te envío la información de pago:",
+                "[[BR]]",
+                "Una vez lo hayas realizado, esperas aproximadamente 1 hora a que sea validado, al pasar ese tiempo te comunicas nuevamente con nosotros para poder solicitar tu carta de no adeudo 🙌"
+            ]
+        },        
+        {
+            "category": "Recupero",
+            "title": "Recupero",
+            "speech": "Queremos informarte que lamentablemente has acumulado varios días de mora en el pago de tus cuotas y no tiene el puntaje necesario para seguir trabajando juntos 😔"
+        },
+        {
+            "category": "Recupero",
+            "title": "Recupero",
+            "speech": "Por el momento este perfil no podrá solicitar un nuevo préstamo, ya que el sistema no permite el desembolso 😔"
+        },
+        {
+            "category": "Recupero",
+            "title": "Recupero",
+            "speech": "Me apena mucho perderlo como cliente😞, sin embargo son las reglas y política de Kashin ☝️"
+        },
+        {
+            "category": "Recupero",
+            "title": "Recupero",
+            "speech": "Entiendo [[INPUTNOMBRE]], lamentablemente al acumular tantos días de retraso en su pago, el sistema ya no le permite solicitar un nuevo préstamo😔"                
+        },
+        {
+            "category": "Recupero",
+            "title": "Recupero",
+            "speech": "Mucha suerte [[INPUTNOMBRE]], gracias por comunicarte con nosotros! 💙"
+        },
+        {
+            "category": "Recupero",
+            "title": "Recupero",
+            "speech": "Mucha suerte [[INPUTNOMBRE]], esperamos muy pronto comunicarnos con usted! 💙"
+        },
+        {
+            "category": "Recupero",
+            "title": "Recupero",
+            "speech": "Por el momento no, en caso de haber alguna campaña, le enviaremos un mensaje avisándole, no se preocupe 🤗🕰️🗒️💰"
+        },
+        {
+            "category": "Recupero",
+            "title": "Recupero",
+            "speech": [
+                "Muchas gracias por la confianza en Kashin💙 [[INPUTNOMBRE]] por favor ayúdame con lo siguiente 🙏💫",
+                "[[BR]]",
+                "Por favor, ayúdanos compartiendo tu experiencia y añadiendo una calificación en Google Play ingresando al siguiente link 🤗",
+                "👉https://play.google.com/store/apps/details?id=com.tc.kashin",
+                "👉Una vez realizado, por favor compártenos una captura por este medio",
+                "[[BR]]",
+                "Estaremos en la espera de su captura de pantalla, gracias por su comunicación! 😊💙",
+                "[[BR]]",
+                "[[INPUTNOMBRE]] por favor no se olvide de enviarnos una captura de pantalla sobre su calificación de nuestra app en Google Play 😊☝️"
+            ]
+        },
+        {
+            "category": "Pago",
+            "title": "Pago",
+            "speech": [
+                "Se brinda proceso de pago",
+                "🔸 BCP:",
+                "Agente:",
+                "Depósito a cuenta corriente soles: 1919077858032",
+                "Banca móvil: transferencia bancaria a 1919077858032. (TRUSTEK S.A.C)",
+                "🔸 Interbank:",
+                "Su pago ha sido validado y su préstamo se encuentra completamente pagado 🤗🙌"
+            ]
+        },
+        {
+            "category": "Pago",
+            "title": "Pago",
+            "speech": [
+                "📲 SUBE EL COMPROBANTE:",
+                "Clic en “Pagar” en app Kashin y carga la foto, se debe ver el monto y N° de operación",
+                "🚫Si el abono de tu cuota lo realizas desde un AGENTE, te informamos que el banco realiza un cobro de comisión, el cual se descuenta del monto que estas depositando. Deberás añadir a tu cuota la comisión según donde te encuentres:",
+                "➕Lima metropolitana S/. 1.00",
+                "➕Provincias S/. 9.00"
+            ]
+        },
+        {
+            "category": "Pago",
+            "title": "Pago",
+            "speech": [
+                "Listo! Muchas gracias por su pago 🤝💙",
+                "[[BR]]",
+                "👍 Recuerda que debes  subirlo al app Kashin en la opcion \"PAGAR\" para que sea validado por el sistema.",
+                "👉 Verás el abono reflejado en las próximas horas, horario de oficina.",
+                "[[BR]]",
+                "¡Saludos!"
+            ]
+        },
+        {
+            "category": "Pago",
+            "title": "Pago",
+            "speech": [
+                "Te dejaré 2 imágenes informativas de los medios de pago 😊👇",  
+                "[[BR]]",
+                "*Recuerda que la única manera de validar un pago es subiendo tu comprobante de pago*",
+                "Puedes subir tu comprobante de pago en el siguiente enlace:",
+                "[[BR]]",
+                "https://kayuda.kashin.app/consulta-pago"
+            ]
+        },
+        {
+            "category": "Pago",
+            "title": "Pago",
+            "speech": [
+                "☝️ Queremos comentarte que al realizar tu pago minutos despues de finalizar el día, el abono demora en verse reflejado en el sistema del banco y muchas veces figura con la fecha del día siguiente 😔",
+                "[[BR]]",
+                "💡 Recuerda que para futuros préstamos es mejor realizar el pago más temprano(8am - 8pm) y así evitar inconvenientes al momento de procesar. Gracias 😉"
+            ]
+        },
+        {
+            "category": "Pago",
+            "title": "Pago",
+            "speech": "No te preocupes que el pago lo vemos en el sistema, en cuanto el banco procese el pago, estaremos atentos para validar el pago 💙🤝"
+        },
+        {
+            "category": "Pago",
+            "title": "Pago",
+            "speech": "Verifico que su pago se encuentra en cola de ser validado, una vez haya sido procesado por el banco nosotros podremos validarlo inmediatamente, no te preocupes estamos dando seguimiento a tu pago"
+        },
+        {
+            "category": "Pago",
+            "title": "Pago",
+            "speech": "Es probable que se haya subido doble su pago, por ello el segundo ha sido rechazado, pero no se preocupe el primer comprobante se encuentra en el sistema para su pronta validación 😊☝️"
+        },
+        {
+            "category": "Préstamo",
+            "title": "Préstamo",
+            "speech": [
+                "XX verifico que tienes un préstamo activo desde XX del año pasado, lo cual impide procesar tu nueva solicitud, te envío la información de pago:👇",
+                "[[BR]]",
+                "✅Préstamo activo desde el [[FECHA]]",
+                "📌Cuota por pagar: S/[[INPUTPRECIO]] con fecha de vencimiento [[FECHA]]",
+                "[[BR]]",
+                "👀 Recuerda que apenas tu préstamo esté completamente pagado y tu pago validado, puedes solicitar otro a través de la app.",
+                "[[BR]]",
+                "⚠️Los pagos se validan en el transcurso del día, luego de subirlos a la app Kashin. "
+            ]
+        },
+        {
+            "category": "Pago",
+            "title": "Pago",
+            "speech": [
+                "Para que su pago sea validado es necesario subirlo en el aplicativo KASHIN, te dejo los pasos a seguir:🤓👇",
+                "1. Ingresar al aplicativo KASHIN y seleccionar el botón \"pagar\".",
+                "2. Elige el medio desde donde realizaste tu pago, \"AGENTE O VENTANILLA\" o \"APP O WEB de banco\".",
+                "3.Dar clic en \"SUBIR COMPROBANTE O TOMAR FOTO\" deberás de elegir la imagen de tu comprobante y posteriormente digitar *número o código de operación* y *monto transferido* y da clic \"CONFIRMAR DATOS\".",
+                "4.Finalmente dar clic en \"CONFIRMAR PAGO\".",
+                "[[BR]]",
+                "¡Listo! tu pago ya se encontrará en cola de ser validado🙌🏻",
+                "📌Recuerda no está realizando un pago nuevamente, los datos que ingrese al aplicativo deben de coincidir con su comprobante de pago para que sea validado a la brevedad."
+            ]
+        },
+        {
+            "category": "Pago",
+            "title": "Pago",
+            "speech": [
+                "[[INPUTNOMBRE]] verifico que el día de hoy nos llegó el pago de S/[[INPUTPRECIO]], siendo tu monto a pagar de S/[[INPUTPRECIO]], por ello tienes el saldo pendiente de S/[[INPUTPRECIO]]☝️",
+                "[[BR]]",
+                "Coméntame, ¿Realizaste tu pago desde un agente?",
+                "[[BR]]",
+                "Para que pueda completar el pago de su préstamo deberá de transferir S/[[INPUTPRECIO]] desde su banca movil o desde un agente el monto de *S/[[INPUTPRECIO]],* donde S/[[INPUTPRECIO]] es el saldo faltante *más* S/[[INPUTPRECIO]] del cobro de comisión que realiza el banco por cada transferencia en un agente 😊☝️",
+                "[[BR]]",
+                "Este pago lo sube en el botón \"pagar\" del app para que sea validado y pueda darse por cancelado su préstamo 🤗",
+                "[[BR]]",
+                "Te invito a comunicarte con Atención al Cliente Kashin vía whatsapp aquí: https://bit.ly/Kashin_Soporte",
+                "[[BR]]",
+                "https://kashin.app/"
+            ]
+        },
+        {
+            "category": "Desembolso BCP",
+            "title": "Desembolso BCP",
+            "speech": [
+                "☝️Queremos informarte que tu préstamo se encuentra en cola de ser desembolsado 👩‍💻🧑‍💻",
+                "Este será realizado el día *Lunes* en el transcurso de la mañana debido al horario indicado por BCP.🕰️",
+                "[[BR]]",
+                "El horario desembolso BCP es:",
+                "✅Lunes - Viernes: 9:00 a.m. a 6:00 p.m.",
+                "✅Sábado: 9:00 a.m. a 2:00 p.m.",
+                "[[BR]]",
+                "No te preocupes, tu préstamo iniciará el día que es desembolsado 🤗"
+            ]
+        },
+        {
+            "category": "Desembolso BCP",
+            "title": "Desembolso BCP",
+            "speech": "Correcto [[INPUTNOMBRE]], debido al horario de atención indicada por BCP este se estaría realizando el día siguiente hábil 🙌"
+        },
+        {
+            "category": "Desembolso",
+            "title": "Desembolso",
+            "speech": "Estamos realizando actualizaciones en el sistema y por ello le comenta eso el bot, pero no se preocupe puede verificar el estado de su préstamo en su app o también con nosotros que tenemos la información del sistema 😊🤝"
+        },
+        {
+            "category": "Desembolso",
+            "title": "Desembolso",
+            "speech": "Anteriormente has tenido mucho atraso, como en tu último préstamo, debido a esto el sistema ya no permite que puedas sacar otro ):"
+        },
+        {
+            "category": "Comprobante de pago",
+            "title": "Comprobante de pago",
+            "speech": "Para ayudarte, por favor ingresa al siguiente link encontrarás información de pago y podrás cargar el comprobante de pago para que sea validado"
+        },
+        {
+            "category": "Pago",
+            "title": "Pago",
+            "speech": "Su monto a pagar es de S/[[INPUTPRECIO]] que vence el [[FECHA]], puede realizar su pago desde su banca movil BCP como transferencia bancaria: 🤓👇"
+        },
+        {
+            "category": "Pago",
+            "title": "Pago",
+            "speech": [
+                "[[INPUTNOMBRE]], visualizo que su pago fue procesado correctamente y su préstamo se encuentra cancelado 🙂",
+                "Agradecemos su puntualidad y compromiso 💙"
+            ]
+        },
+        {
+            "category": "Promesa de pago",
+            "title": "Promesa de pago",
+            "speech": [
+                "Comprendo [[INPUTNOMBRE]] por el momento el sistema no nos permite realizar un aplazamiento😔, pero podemos brindarte una promesa de pago simple, para ello nos indicas que día podrías pagar y cual sería el motivo de su retraso? 🤝",
+                "[[BR]]",
+                "Tener en cuenta que:",
+                "[[BR]]",
+                "✅Esta promesa no cambia tu fecha de pago pero si le notifica a nuestros asesores de cobranzas.",
+                "✅Las llamadas o mensajes automáticas continuarán.",
+                "✅Recuerda que cada día de demora afecta tus puntos y Rekompensas Kashin pero no aumentará ningún monto en tu deuda actual.",
+                "[[BR]]",
+                "¿Estarías de acuerdo?"
+            ]
+        },
+        {
+            "category": "Promesa de pago",
+            "title": "Promesa de pago",
+            "speech": "🙌Listo, tu promesa ha sido ingresada en nuestro sistema para el [[FECHA]]"
+        },
+        {
+            "category": "Promesa de pago",
+            "title": "Promesa de pago",
+            "speech": "Pero si no puede pagar por el momento, podemos brindarte una promesa de pago pero no es una prorroga, esta es solo informativa para nuestros asesores 👩‍💻"
+        },
+        {
+            "category": "Promesa de pago",
+            "title": "Promesa de pago",
+            "speech": "*Las condiciones de proroga han sido cambiadas, este beneficio solo se podrá hacer eso 1 vez si lo solicita por más de 5 días, si es así se inhabilitará en sus proximos 3 prestamos,"
+        },
+        {
+            "category": "Promesa de pago",
+            "title": "Promesa de pago",
+            "speech": "[[INPUTNOMBRE]] podemos ayudarte registrando una promesa de pago simple la cual es solo informativa para nuestros asesores, para ello indícame ¿Qué día podrías pagar? 👩‍💻"
+        },
+        {
+            "category": "Promesa de pago",
+            "title": "Promesa de pago",
+            "speech": [
+                "El aplazamiento se realiza por alguna emergencia del cliente, la fecha que coloca es con la finalidad de que realice su pago el día colocado en el sistema 🤝",
+                "La pag de aplazamientos se activa solo para algunos prestamos 🤗💙"
+            ]
+        },
+        {
+            "category": "Promesa de pago",
+            "title": "Promesa de pago",
+            "speech": [
+                "🔎Verifico en el sistema, que ya usaste el beneficio de prórroga que Kashin brinda para ayudar a sus clientes de forma gratuita, te pedimos que realices los pagos de forma puntual al solicitar tus préstamos",
+                "[[BR]]",
+                "Pero puedo registrar una promesa de pago en el sistema , sin embargo no es igual a una prórroga 📆",
+                "[[BR]]",
+                "Indícame por favor una fecha segura en la que podrás pagar😊🤝"
+            ]
+        },
+        {
+            "category": "Promesa de pago",
+            "title": "Promesa de pago",
+            "speech": "Claro [[INPUTNOMBRE]], esta es una promesa simple, para información de nuestros asesores de cobranzas, mas no es una prorroga, no está cambiando su fecha de pago, le envío en el siguiente msj lo que implica una promesa de pago 🤓🤝"
+        },
+        {
+            "category": "Promesa de pago",
+            "title": "Promesa de pago",
+            "speech": "🔎Verificamos que ya tiene una promesa de pago registrada en nuestro sistema para el [[FECHA]] 😊🤝"
+        },
+        {
+            "category": "Historial de pagos",
+            "title": "Historial de pagos",
+            "speech": [
+                "*Actualmente te encuentras en el nivel Básico con una linea de crédito de S/50.00, en la parte superior de la sección de \"Préstamos\" puedes ver cuanto puntaje tienes acumulado y lo que te falta para subir al siguiente nivel, el cual es \"Bronce\" con una linea de crédito de hasta S/100.00🙌",
+                "[[BR]]",
+                "Si deseas me puedes enviar una foto de cuantos puntos tienes actualmente e indicarte cuantos puntos te faltan para subir al siguiente nivel 😊🙌"
+            ]
+        },
+        {
+            "category": "Cliente 800",
+            "title": "Cliente 800",
+            "speech": [
+                "👆Cada usuario tiene una línea de crédito independiente que es lo máximo que puedes pedir.",
+                "Los usuarios que generen un buen historial con nosotros pueden llegar a pedir hasta S/. 800 por préstamo 🤗",
+                "[[BR]]",
+                "Seguimos trabajando para incluir nuevas lineas de crédito mayores a la que has alcanzado 💪"
+            ]
+        },
+        {
+            "category": "Desembolso",
+            "title": "Desembolso",
+            "speech": [
+                "Esto tarda aproximadamente 1 hora dentro del horario mencionado, una vez se haya realizado el desembolso le llegará un mensaje con la información 🙌",
+                "Una vez se haya realizado la validación le llegará un mensaje con la información 🙌"
+            ]
+        },
+        {
+            "category": "Errores APP",
+            "title": "Errores APP",
+            "speech": [
+                "Te daremos la prioridad del caso para que sea lo más antes posible 🤗",
+                "[[BR]]",
+                "Por favor adjunta una captura de pantalla o un video del error o problema que sale en tu app para entenderte mejor y poder ayudarte 📱",
+                "Por favor adjunta una captura de pantalla de lo que sale en tu app para entenderte mejor y poder ayudarte 📱",
+                "Por favor adjunta una captura de pantalla de lo que sale en tu app para poder validar si subiste tu comprobante de pago y poder ayudarte 📱",
+                "[[BR]]",
+                "En caso que no te permita continuar por favor espera unos minutos, cierra completamente y abre nuevamente el App 📲"
+            ]
+        },
+        {
+            "category": "Errores APP",
+            "title": "Errores APP",
+            "speech": [
+                "Por favor para poder llegar a la solución de la incidencia que estás presentando, tu apoyo para seguir los siguientes pasos:",
+                "✅ Borre caché",
+                "✅ Desinstale el app y vuelva a instalarlo.",
+                "✅ Ingrese sus datos al aplicativo e ingrese a su cuenta.",
+                "Nos avisa si pudo ingresar con normalidad a la app 🤗"
+            ]
+        },
+        {
+            "category": "Pago",
+            "title": "Pago",
+            "speech": [
+                "Hola, buen día! 🙋‍♀️",
+                "Somos Kashin, el app de préstamos,",
+                "mi nombre es Lesly😊",
+                "¿En qué podemos ayudarte hoy?🙌"
+            ]
+        },
+        {
+            "category": "Pago",
+            "title": "Pago",
+            "speech": [
+                "Te envió tu cronograma de pagos:👇👇",
+                "[[FECHA]]...........-> S/[[INPUTPRECIO]]",
+                "[[FECHA]]...........-> S/[[INPUTPRECIO]]",
+                "[[FECHA]]...........-> S/[[INPUTPRECIO]]",
+                "[[FECHA]]...........-> S/[[INPUTPRECIO]]",
+                "[[FECHA]]...........-> S/[[INPUTPRECIO]]",
+                "[[FECHA]]...........-> S/[[INPUTPRECIO]]"
+            ]
+        },
+        {
+            "category": "Recupero",
+            "title": "Recupero",
+            "speech": [
+                "Hola, buen día! 🙋‍♀️",
+                "Somos Kashin, el app de préstamos,",
+                "mi nombre es Lesly😊",
+                "¿En qué podemos ayudarte hoy?🙌"
+            ]
+        },
+        {
+            "category": "Retorno de capital",
+            "title": "Retorno de capital",
+            "speech": [
+                "🕐 Esperar que el desembolso se realice",
+                "📲 Realizar el pago de los S/50.00(válido SOLO el día desembolsado hasta las 4pm, recomendable realizarlo desde una banca móvil)",
+                "✅Subirlo en el botón \"pagar\" del app Kashin para su validación",
+                "👩‍💻Una vez haya sido validado su pago comunicarse con nosotros para solicitar al área correspondiente la cancelación del préstamo por el retorno del capital (S/50.00)",
+                "[[BR]]",
+                "ATENCIÓN AL CLIENTE KASHIN-->https://acortar.link/jbZGfC"
+            ]
+        },
+        {
+            "category": "Errores APP",
+            "title": "Errores APP",
+            "speech": [
+                "Para borrar caché:",
+                "✅Navegue a Configuración; luego vaya a “Aplicaciones y notificaciones”",
+                "✅Seleccione: “Todas las aplicaciones” y elige tu app Kashin",
+                "✅Selecciona “Almacenamiento” y “Limpiar caché”",
+                "[[BR]]",
+                "🙋‍♀️ Recuerda que estamos debidamente registrados por la SBS. 🤗"
+            ]
+        },
+        {
+            "category": "Recupero",
+            "title": "Recupero",
+            "speech": [
+                "Hola, buen día! 🙋‍♀️",
+                "Somos Kashin, el app de préstamos,",
+                "mi nombre es Lesly😊",
+                "¿En qué podemos ayudarte hoy?🙌"
+            ]
+        },
+        {
+            "category": "Tasas",
+            "title": "Tasas",
+            "speech": [
+                "Comprendo [[INPUTNOMBRE]], son tasas cambiadas para un reajuste general, con el fin de poder seguir brindándoles un servicio de calidad. 🤗💙",
+                "Lamentamos que haya sido tan repentino, seguimos trabajando en las mejoras para todos nuestros usuarios 👩‍💻🙌"
+            ]
+        },
+        {
+            "category": "Tasas",
+            "title": "Tasas",
+            "speech": "Hola [[INPUTNOMBRE]], si ajustamos las tasas de interés debido a la situación economica a nivel global y en el país. Esta medida nos permite seguir ofreciendo préstamos confiables y seguros"
+        },
+        {
+            "category": "Tasas",
+            "title": "Tasas",
+            "speech": "Entiendo tu preocupación, [[INPUTNOMBRE]]. Lamentamos mucho que te sientas así. Apreciamos tus comentarios y los tendremos en cuenta para seguir mejorando. Si en algún momento decides volver a usar nuestros servicios, estaremos aquí para ayudarte. 🤝"
+        },
+        {
+            "category": "Amenazas",
+            "title": "Amenazas",
+            "speech": [
+                "⚠️ ¿Te están cobrando préstamos amenazándote y/o contactando a tus conocidos?",
+                "[[BR]]",
+                "No somos nosotros, ¡pero te ayudamos a presentar una denuncia! 💪",
+                "[[BR]]",
+                "Oprime el botón para más información.",
+                "[[BR]]",
+                "🙋‍♀️ Tus amigos de Kashin, la app de préstamos 💙",
+                "https://docs.google.com/forms/d/e/1FAIpQLSe6mAumjgL2qVCQJD4DW639adqpYyj0CCAV3kcC5Lp10eB_EA/viewform"
+            ]
+        },
+        {
+            "category": "Errores APP",
+            "title": "Errores APP",
+            "speech": [
+                "Entiendo [[INPUTNOMBRE]], estamos presentando una incidencia con la toma de fotos 😔",
+                "No te preocupes, no es tu cámara ☝️",
+                "Estamos trabajando en ello 💪",
+                "Por favor intenta nuevamente por la tarde o si pudieses mejor el día de mañana, ya que hoy estaremos solucionándolo, sin embargo, no tenemos un tiempo exacto 🙏"
+            ]
+        }                
     ]
 }
